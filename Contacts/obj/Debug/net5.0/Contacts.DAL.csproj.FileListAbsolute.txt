@@ -1,0 +1,15 @@
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\bin\Debug\net5.0\Contacts.DAL.deps.json
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\bin\Debug\net5.0\Contacts.DAL.runtimeconfig.json
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\bin\Debug\net5.0\Contacts.DAL.runtimeconfig.dev.json
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\bin\Debug\net5.0\Contacts.DAL.dll
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\bin\Debug\net5.0\ref\Contacts.DAL.dll
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\bin\Debug\net5.0\Contacts.DAL.pdb
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\obj\Debug\net5.0\Contacts.DAL.csproj.AssemblyReference.cache
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\obj\Debug\net5.0\Contacts.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\obj\Debug\net5.0\Contacts.DAL.AssemblyInfoInputs.cache
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\obj\Debug\net5.0\Contacts.DAL.AssemblyInfo.cs
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\obj\Debug\net5.0\Contacts.DAL.csproj.CoreCompileInputs.cache
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\obj\Debug\net5.0\Contacts.DAL.dll
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\obj\Debug\net5.0\ref\Contacts.DAL.dll
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\obj\Debug\net5.0\Contacts.DAL.pdb
+D:\FORMATION-TB\Formation\Diego_TB_Projects\Contacts\Contacts\obj\Debug\net5.0\Contacts.DAL.genruntimeconfig.cache
