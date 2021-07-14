@@ -11,9 +11,7 @@ namespace Contacts.DAL.Entities
         public int Id { get; set; }
         public string Nom { get; set; }
         public string Prenom { get; set; }
-        public int Tel { get; set; }
+        public string Tel { get; set; }
         public string Email { get; set; }
-
     }
-
 }

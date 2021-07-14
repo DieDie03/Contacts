@@ -30,19 +30,25 @@ namespace ConsoleContacts
                
 
                 Console.Clear();
-                Console.WriteLine("Bienvenue dans l'assistant répertoire!");
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Bienvenue dans l'assistant répertoire! \n");
                 Console.WriteLine("Ici vous pourrez : ");
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("1)-Ajouter un contact");
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("2)-Modifier un contact");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Console.WriteLine("3)-Supprimer un contact");
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("4)-Afficher le répertoire");
+                        Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.Write("\r\nChoisissez une option : ");
 
                 switch (Console.ReadLine())
                 {
                     case "1":
                         Console.Clear();
-                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.WriteLine("AJOUT!");
                         Console.ForegroundColor = ConsoleColor.White;
                         Contact a = new Contact();
@@ -51,14 +57,24 @@ namespace ConsoleContacts
                         Console.Write("Prénom : ");
                         a.Prenom = Console.ReadLine();
                         Console.Write("Tel : ");
-                        a.Tel = Convert.ToInt32(Console.ReadLine());
+                        a.Tel = Console.ReadLine();
                         Console.Write("E-Mail : ");
                         a.Email = Console.ReadLine();
                         service.AddContact(a);
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("AJOUT A LA DB...");
+                        Console.Clear();
+                        Console.Beep(1500, 200);
+                        Console.Beep(3000, 200);
+                        Console.Beep(1500, 400);
+                        Console.Beep(1300, 100);
+                        Console.Beep(1700, 150);
+                        Console.Beep(1800, 100);
+                        Console.ForegroundColor = ConsoleColor.White;
                         return true;
                     case "2":
                         Console.Clear();
-                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         Console.WriteLine("MODIFICATION!");
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Donnez nous l'ID à modifier : ");
@@ -68,22 +84,48 @@ namespace ConsoleContacts
                         Console.Write("Entrez le prénom à modifier : ");
                         string Prenom = Console.ReadLine();
                         Console.Write("Entrez le téléphone à modifier : ");
-                        int Tel = Convert.ToInt32(Console.ReadLine());
+                        string Tel = Console.ReadLine();
                         Console.Write("Entrez l'e-mail à modifier : ");
                         string Email = Console.ReadLine();
                         service.Update(new Contact { Id = ID, Nom = Nom, Prenom = Prenom, Tel = Tel, Email = Email });
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("MODIFICATION DU CONTACT DANS LA DB...");
+                        Console.Clear();
+                        Console.Beep(1500, 20);
+                        Console.Beep(300, 20);
+                        Console.Beep(500, 400);
+                        Console.Beep(1300, 100);
+                        Console.Beep(1700, 150);
+                        Console.Beep(1800, 100);
+                        Console.ForegroundColor = ConsoleColor.White;
                         return true;
                     case "3":
                         Console.Clear();
-                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.WriteLine("SUPPRESSION!");
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Donnez nous l'ID à supprimer : ");
-                        int ID1 = Convert.ToInt32(Console.ReadLine());
-                        service.Delete(ID);
+                        int IDD = Convert.ToInt32(Console.ReadLine());
+                        service.Delete(IDD);
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("SUPPRESSION DU CONTACT DANS LA DB...");
+                        Console.Clear();
+                        Console.Beep(1700, 150);
+                        Console.Beep(1700, 150);
+                        Console.Beep(1700, 150);
+                        Console.Beep(1800, 100);
+                        Console.ForegroundColor = ConsoleColor.White;
                         return true;
                     case "4":
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("RÉCUPÉRATION DES CONTACT DANS LA DB...");
+                        Console.Clear();
+                        Console.Beep(1500, 200);
+                        Console.Beep(1500, 200);
+                        Console.Beep(1500, 400);
+                        Console.Beep(1300, 100);
+                        Console.ForegroundColor = ConsoleColor.White;
                         List<Contact> result = service.GetContact();
                         foreach (Contact contact in result)
                         {
@@ -97,7 +139,11 @@ namespace ConsoleContacts
                         return true;
                     default:
                         Console.Clear();
+                        Console.Beep(3000, 200);
+                        Console.Beep(1500, 200);
                         Console.WriteLine("À Bientôt!");
+                        Console.ForegroundColor = default;
+
                         return false;
                 }
             }

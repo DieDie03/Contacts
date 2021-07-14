@@ -57,6 +57,7 @@ namespace Contacts.DAL.Services
                 cmd.Transaction = t;
                 cmd.CommandText = "DELETE FROM Contacts WHERE ID = @p1";
                 cmd.Parameters.AddWithValue("p1", id);
+                t.Commit();
                 return cmd.ExecuteNonQuery() != 0;
             }
             catch (Exception ex)
@@ -139,7 +140,7 @@ namespace Contacts.DAL.Services
                         Id = (int)reader["ID"],
                         Nom = (string)reader["Nom"],
                         Prenom = (string)reader["Prenom"],
-                        Tel = (int)reader["Tel"],
+                        Tel = (string)reader["Tel"],
                         Email = (string)reader["Email"],
                     });
                 }
